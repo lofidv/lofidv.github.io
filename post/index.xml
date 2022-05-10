@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Lofidv Blog</title>
+    <link>https://blog.github.io/post/</link>
+    <description>Recent content in Posts on Lofidv Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 09 May 2022 23:39:06 -0600</lastBuildDate><atom:link href="https://blog.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>jsutils</title>
+      <link>https://blog.github.io/jsutils/</link>
+      <pubDate>Mon, 09 May 2022 23:39:06 -0600</pubDate>
+      
+      <guid>https://blog.github.io/jsutils/</guid>
+      <description>Documentation of the example of my youtube video
+Contains func Contains[T comparable](elems []T, v T) bool { for _, s := range elems { if v == s { return true } } return false }  Reverse Slice func ReverseSlice[T any](s []T) { first := 0 last := len(s) - 1 for first &amp;lt; last { s[first], s[last] = s[last], s[first] first++ last-- } }  Map func Map[T, U any](s []T, f func(T) U) []U { r := make([]U, len(s)) for i, v := range s { r[i] = f(v) } return r }  Filter func Filter[T any](s []T, f func(T) bool) []T { var r []T for _, v := range s { if f(v) { r = append(r, v) } } return r }  Reduce func Reduce[T, U any](s []T, init U, f func(U, T) U) U { r := init for _, v := range s { r = f(r, v) } return r }  Usage example Install go get github.</description>
+    </item>
+    
+  </channel>
+</rss>
